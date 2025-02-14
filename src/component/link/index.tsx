@@ -20,7 +20,7 @@ export function Link({ name, url, onDetails }: props) {
           {url}
         </Text>
       </View>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={onDetails}>
         <MaterialIcons name="more-horiz" size={20} color={colors.gray[400]} />
       </TouchableOpacity>
     </View>
